@@ -58,5 +58,4 @@ To provide a clean dump of the current source code for LLM context or debugging,
 ```bash
 find src -name "*.tex" | sort -u | xargs tail -n +1
 ```
-```
 
