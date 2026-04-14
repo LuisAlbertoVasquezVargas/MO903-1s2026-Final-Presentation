@@ -1,14 +1,15 @@
-# IC Presentation Template
 
-A modular LaTeX Beamer template designed for technical presentations, specifically optimized for Computer Science and Scientific Redaction workflows.
+# MO903-1s2026-Final-Presentation
+
+Final presentation for MO903 (Scientific Writing) at the Institute of Computing (IC) - UNICAMP, 1st Semester 2026. This project presents an AI-Augmented Framework for Personalized Student Timetabling.
 
 ## 🛠 Local Setup
 
-This project is designed for a terminal-based LaTeX environment. It avoids dependencies on cloud editors to ensure full control over the build pipeline.
+This project is designed for a terminal-based LaTeX environment on Arch Linux (Omarchy), utilizing a modular structure to ensure full control over the build pipeline.
 
 ### Installation
 
-To install the full set of dependencies on Arch Linux (or Omarchy), run:
+To install the required dependencies, run:
 
 ```bash
 sudo pacman -S texlive-basic texlive-latexextra texlive-fontsrecommended \
@@ -31,26 +32,31 @@ latexmk -pdf -pvc -e '$pdf_previewer="zathura %S"' -outdir=output src/main.tex
 
 ## 📂 Project Structure
 
-The structure follows the convention of the Topicos (Scientific Redaction) report for seamless content porting:
+The project uses the polished IC Beamer template with the Gillius (Gill Sans) font set and a modular content layout:
 
 ```text
 .
-├── README.md               # Setup
+├── README.md               # Setup and project info
 └── src/
     ├── main.tex            # Main entry point
     ├── structure/
-    │   ├── engine.tex      # LaTeX packages and Beamer configuration
-    │   └── metadata.tex    # Presentation and author information
+    │   ├── engine.tex      # Beamer theme logic and Gillius font config
+    │   └── metadata.tex    # Presentation metadata (Course, RA, Instructor)
     └── sections/           # Modular slide files
+        ├── 00_title.tex
         ├── 01_intro.tex
-        ├── 02_methodology.tex
+        ├── 02_related.tex
+        ├── 03_methodology.tex
+        ├── 04_outcomes.tex
         └── 99_questions.tex
 ```
 
 ## 🚀 Last Working Code (LWC)
 
-Use this command to generate a full project dump for LLM context. This command prunes hidden directories and non-source files, ensuring the model receives a clean representation of the current project state.
+To provide a clean dump of the current source code for LLM context or debugging, run:
 
 ```bash
 find src -name "*.tex" | sort -u | xargs tail -n +1
 ```
+```
+
