@@ -2,13 +2,59 @@
 
 \section{Expected Outcomes and Challenges}
 
-\begin{frame}{Benefits and Challenges}
-  % SLIDE 5 - MANDATORY
-  \vfill
-  \centering
-  \begin{tikzpicture}
-      \draw[dashed, thick, SecondaryColor!40, rounded corners] (0,0) rectangle (6,3);
-      \node at (3, 1.5) {\color{SecondaryColor!60}\faRocket \quad Benefits Placeholder};
-  \end{tikzpicture}
-  \vfill
+\begin{frame}{Anticipated Research Outcomes}
+    \begin{columns}[T]
+        \column{0.55\textwidth}
+        \begin{itemize}
+            \item \textbf{Search Space Optimization} \\
+            {\footnotesize \faArrowDown \quad Significant reduction in nodes visited vs. Baseline Algorithm.}
+            \vfill
+            \item \textbf{Constraint Satisfaction} \\
+            {\footnotesize \faCheckSquareO \quad 100\% hard-constraint feasibility with optimized soft-preference scoring.}
+            \vfill
+            \item \textbf{Framework Adaptability} \\
+            {\footnotesize \faCogs \quad Empirical validation of the Python/JS prototype across diverse curricula.}
+        \end{itemize}
+        
+        \column{0.45\textwidth}
+        \centering
+        \vspace{0.5cm}
+        \begin{tikzpicture}[scale=0.85]
+            \draw[->, thick] (0,0) -- (3.5,0) node[right] {\tiny Input Size};
+            \draw[->, thick] (0,0) -- (0,3.5) node[above] {\tiny Search Space};
+            
+            \draw[gray, dashed, thick] (0.2,0.2) .. controls (1.5,0.5) and (2.2,1.2) .. (3.2,3.2);
+            \node[gray, right] at (3.2,3.2) {\tiny Baseline};
+            
+            \draw[SecondaryColor, ultra thick] (0.2,0.2) .. controls (1.2,0.8) and (2.2,1.0) .. (3.2,1.2);
+            \node[SecondaryColor, right] at (3.2,1.2) {\tiny DRL};
+            
+            \filldraw[AlertColor] (3.2,1.2) circle (2pt);
+        \end{tikzpicture}
+        
+        \vspace{0.2cm}
+        {\scriptsize Fig: Projected Heuristic Efficacy}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Challenges and Future Work}
+    \begin{alertblock}{Current Technical Challenges}
+        \begin{itemize}
+            \item \textbf{Computational Overhead:} Balancing DRL inference time against the actual time saved during tree pruning.
+            \item \textbf{Data Scarcity:} Obtaining high-fidelity student preference data for cross-institutional testing.
+        \end{itemize}
+    \end{alertblock}
+
+    \vspace{0.3cm}
+
+    \begin{alertblock}{Future Horizons}
+        \begin{itemize}
+            \item \textbf{Generalization:} Testing the agent on vastly different curriculum structures (e.g., UNI Lima vs. UNICAMP).
+            \item \textbf{Explainability:} Implementing XAI methods to verify agent pruning logic.
+        \end{itemize}
+    \end{alertblock}
+    
+    \vfill
+    \centering
+    \footnotesize \textit{Focus: Transitioning from a Prototype to a Scalable Academic Tool.}
 \end{frame}
