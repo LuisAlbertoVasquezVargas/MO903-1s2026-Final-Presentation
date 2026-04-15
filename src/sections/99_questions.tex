@@ -18,9 +18,7 @@
       \small \textbf{Snow} \\
       \vspace{0.2cm}
       \begin{tikzpicture}
-        % The clip handles the shape; we removed the \draw command
         \clip[rounded corners] (0,0) rectangle (4.5,2.8);
-        % Image is slightly larger than the clip area to ensure zero gaps
         \node at (2.25, 1.4) {\includegraphics[width=4.75cm, height=2.95cm, keepaspectratio]{img/snow.jpg}};
       \end{tikzpicture}
 
@@ -30,7 +28,6 @@
       \vspace{0.2cm}
       \begin{tikzpicture}
         \clip[rounded corners] (0,0) rectangle (4.5,2.8);
-        % Over-scaling by ~5% to guarantee full coverage
         \node at (2.25, 1.4) {\includegraphics[width=4.75cm, height=2.95cm, keepaspectratio]{img/vincenzo.jpg}};
       \end{tikzpicture}
   \end{columns}
