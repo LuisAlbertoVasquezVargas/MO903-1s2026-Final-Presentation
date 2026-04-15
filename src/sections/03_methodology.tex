@@ -3,23 +3,57 @@
 \section{Methodology}
 
 % Slide 3 - MANDATORY
-\begin{frame}{Methodology}
-  \vfill
-  \centering
-  \begin{tikzpicture}
-      \draw[dashed, thick, SecondaryColor!40, rounded corners] (0,0) rectangle (6,3);
-      \node at (3, 1.5) {\color{SecondaryColor!60}\faFlask \quad Methodology Placeholder};
-  \end{tikzpicture}
-  \vfill
+\begin{frame}{Proposed Methodology}
+    \begin{columns}[T]
+        \column{0.48\textwidth}
+        \begin{itemize}
+            \item \textbf{M1--M6: Formalization} \\
+            {\footnotesize \faCalculator \quad Mathematical modeling}
+            
+            \vspace{0.1cm}
+            \item \textbf{M7--M12: Algorithm Dev.} \\
+            {\footnotesize \faCode \quad Optimized DFS/Backtracking}
+            
+            \vspace{0.1cm}
+            \item \textbf{M13--M18: Neural Integration} \\
+            {\footnotesize \faLightbulbO \quad DRL search pruning}
+            
+            \vspace{0.1cm}
+            \item \textbf{M19--M21: Prototyping} \\
+            {\footnotesize \faDesktop \quad Python + JS Web UI}
+            
+            \vspace{0.1cm}
+            \item \textbf{M22--M24: Validation} \\
+            {\footnotesize \faLineChart \quad Efficiency benchmarks}
+        \end{itemize}
+
+        \column{0.52\textwidth}
+        \centering
+        \vspace{0.5cm}
+        
+        \begin{tikzpicture}
+            \draw[thick, dashed, SecondaryColor!50] (0,0) rectangle (5,4);
+            \node[text width=4cm, align=center] at (2.5,2) {\scriptsize [Placeholder: methodology\_concept.png] \\ \tiny (Search Tree + Neural Pruner)};
+        \end{tikzpicture}
+        
+        \vfill
+        \scriptsize \textbf{Learning-Augmented Optimization}
+    \end{columns}
 \end{frame}
 
 % Slide 4 - OPTIONAL
-\begin{frame}{Tests and Schedule}
-  \vfill
-  \centering
-  \begin{tikzpicture}
-      \draw[dashed, thick, SecondaryColor!40, rounded corners] (0,0) rectangle (6,3);
-      \node at (3, 1.5) {\color{SecondaryColor!60}\faCalendar \quad Tests/Timeline Placeholder};
-  \end{tikzpicture}
-  \vfill
+\begin{frame}{Development Roadmap}
+    \centering
+    
+    \begin{tikzpicture}
+        \draw[thick, dashed, SecondaryColor!50] (0,0) rectangle (10,3);
+        \node[text width=8cm, align=center] at (5,1.5) {\scriptsize [Placeholder: timeline.png] \\ \tiny (24-Month Roadmap)};
+    \end{tikzpicture}
+    
+    \vfill
+    \begin{columns}[onlytextwidth]
+        \column{0.33\textwidth} \centering \textbf{\faCogs \\ Robust}
+        \column{0.33\textwidth} \centering \textbf{\faFlash \\ Scalable}
+        \column{0.33\textwidth} \centering \textbf{\faCheckCircleO \\ Validated}
+    \end{columns}
 \end{frame}
