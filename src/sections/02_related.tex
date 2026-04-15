@@ -3,12 +3,57 @@
 \section{Related Work}
 
 \begin{frame}{Related Work}
-  % SLIDE 3 - OPTIONAL
-  \vfill
-  \centering
-  \begin{tikzpicture}
-      \draw[dashed, thick, SecondaryColor!40, rounded corners] (0,0) rectangle (6,3);
-      \node at (3, 1.5) {\color{SecondaryColor!60}\faBook \quad Related Work Placeholder};
-  \end{tikzpicture}
-  \vfill
+    \begin{columns}[T]
+        
+        \column{0.55\textwidth}
+            \begin{itemize}
+                \item \textbf{Educational Timetabling (ET)}
+                    \begin{itemize}
+                        \item Focuses on institutional resources.
+                        \item Student preference is often secondary.
+                    \end{itemize}
+                
+                \item \textbf{Learning-Augmented Optimization}
+                    \begin{itemize}
+                        \item Using ML to guide combinatorial search.
+                        \item Neural guidance replaces hard-coded heuristics.
+                    \end{itemize}
+                
+                \item \textbf{Personalized Scheduling (PSTP)}
+                    \begin{itemize}
+                        \item Focuses on individualized satisfaction.
+                        \item Emerging and growing niche.
+                    \end{itemize}
+            \end{itemize}
+
+        \column{0.45\textwidth}
+            \begin{tikzpicture}
+                \node[fill=AccentColor, inner sep=6pt, text width=0.98\columnwidth, align=center, minimum height=0.65\textheight] {
+                    \color{white}
+                    {\large \textbf{Research Gap}}
+                    
+                    \vspace{0.1cm}
+                    \hrulefill 
+                    \vspace{0.1cm}
+                    
+                    \begin{quote}
+                        \centering
+                        \footnotesize
+                        {\linespread{1.1}\selectfont \textbf{1. Algorithmic:} Lack of methods leveraging neural heuristics for scalable, personalized constraints.\par}
+                    \end{quote}
+                    
+                    \vspace{0.1cm}
+                    
+                    \begin{quote}
+                        \centering
+                        \footnotesize
+                        {\linespread{1.1}\selectfont \textbf{2. Structural:} Absence of unified data standards and frameworks to model diverse global university scenarios.\par}
+                    \end{quote}
+                    
+                    \vspace{0.3cm}
+                    \Large \faSearchPlus 
+                };
+            \end{tikzpicture}
+            
+    \end{columns}
 \end{frame}
