@@ -8,27 +8,30 @@
   \begin{beamercolorbox}[sep=12pt,center,rounded=true,shadow=true]{palette primary}
     \usebeamerfont{title}\Huge Questions? \\
     \vspace{0.3cm}
-    \usebeamerfont{title}\Large Obrigado! \raisebox{-1pt}{\(\mathbf{\ddot{\smile}}\)}
+    \usebeamerfont{title}\Large Thank You! \raisebox{-1pt}{\(\mathbf{\ddot{\smile}}\)}
   \end{beamercolorbox}
   \vfill
 
   \begin{columns}[onlytextwidth, T]
     \column{0.5\textwidth}
       \centering
-      \small \textbf{Visual Placeholder A} \\
+      \small \textbf{Snow} \\
       \vspace{0.2cm}
       \begin{tikzpicture}
-        \draw[dashed, thick, SecondaryColor!40, rounded corners] (0,0) rectangle (2.5,1.5);
-        \node at (1.25, 0.75) {\color{SecondaryColor!60}\faBarChart};
+        % The clip handles the shape; we removed the \draw command
+        \clip[rounded corners] (0,0) rectangle (4.5,2.8);
+        % Image is slightly larger than the clip area to ensure zero gaps
+        \node at (2.25, 1.4) {\includegraphics[width=4.75cm, height=2.95cm, keepaspectratio]{img/snow.jpg}};
       \end{tikzpicture}
 
     \column{0.5\textwidth}
       \centering
-      \small \textbf{Visual Placeholder B} \\
+      \small \textbf{Vincenzo} \\
       \vspace{0.2cm}
       \begin{tikzpicture}
-        \draw[dashed, thick, SecondaryColor!40, rounded corners] (0,0) rectangle (2.5,1.5);
-        \node at (1.25, 0.75) {\color{SecondaryColor!60}\faCodeFork};
+        \clip[rounded corners] (0,0) rectangle (4.5,2.8);
+        % Over-scaling by ~5% to guarantee full coverage
+        \node at (2.25, 1.4) {\includegraphics[width=4.75cm, height=2.95cm, keepaspectratio]{img/vincenzo.jpg}};
       \end{tikzpicture}
   \end{columns}
 
